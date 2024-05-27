@@ -72,8 +72,7 @@ int main()
         cout << "1. Enter data matrix" << endl;
         cout << "2. Sum of all numbers" << endl;
         cout << "3. Show data in matrix" << endl;
-        cout << "4. Count elements with value > \"1\"" << endl;
-        cout << "5. Exit" << endl;
+        cout << "4. Exit" << endl;
         cout << "Please enter choice: ";
         cin >> choice;
         switch (choice)
