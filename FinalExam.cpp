@@ -63,6 +63,26 @@ void PrintMatrix(double matrix[4][3])
     }
 }
 
+/**
+ *
+ * Count the number of elements in the matrix that are equal to 1.0
+ */
+int CountMatrix(double matrix[4][3])
+{
+    int count = 0;
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            if (matrix[i][j] = 1.0)
+            {
+                count++;
+            }
+        }
+    }
+    return count;
+}
+
 #pragma endregion func
 
 
@@ -91,7 +111,8 @@ int main()
         cout << "1. Enter data matrix" << endl;
         cout << "2. Sum of all numbers" << endl;
         cout << "3. Show data in matrix" << endl;
-        cout << "4. Exit" << endl;
+        cout << "4. Count elements with value > \"1\"" << endl;
+        cout << "5. Exit" << endl;
         cout << "Please enter choice: ";
         cin >> choice;
         switch (choice)
@@ -106,12 +127,15 @@ int main()
             PrintMatrix(matrix);
             break;
         case 4:
+            cout << "Number of elements with value 1.0: " << CountMatrix(matrix) << endl;
+            break;
+        case 5:
             return 0;
         default:
             cout << "Invalid choice" << endl;
             break;
         }
-    } while (choice != 4);
+    } while (choice != 5);
     return 0;
 }
 
