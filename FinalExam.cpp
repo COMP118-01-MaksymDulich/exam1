@@ -12,7 +12,12 @@ using namespace std;
 
 #pragma region func
 
-double inputMatrix(double matrix[4][3])
+
+/**
+ *
+ * Get the input from the user terminal and store it in the matrix
+ */
+void inputMatrix(double matrix[4][3])
 {
     for (int i = 0; i < 4; i++)
     {
@@ -22,9 +27,13 @@ double inputMatrix(double matrix[4][3])
             cin >> matrix[i][j];
         }
     }
-    return 0;
 }
 
+
+/**
+ *
+ * Sum all the numbers in the matrix and return the result
+ */
 double SumMatrix(double matrix[4][3])
 {
     double sum = 0;
@@ -38,6 +47,10 @@ double SumMatrix(double matrix[4][3])
     return sum;
 }
 
+/**
+ *
+ * Print the matrix in the terminal
+ */
 void PrintMatrix(double matrix[4][3])
 {
     for (int i = 0; i < 4; i++)
@@ -52,7 +65,13 @@ void PrintMatrix(double matrix[4][3])
 
 #pragma endregion func
 
+
 #pragma region main
+
+/**
+ *
+ * Main function, initialize the matrix and provide the user with options
+ */
 int main()
 {
     // Create a matrix of doubles (4x3) and init
