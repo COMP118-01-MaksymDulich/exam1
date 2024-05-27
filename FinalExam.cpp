@@ -80,7 +80,7 @@ int main()
     {
         for (int j = 0; j < 3; j++)
         {
-            matrix[i][j] = i + j;
+            matrix[i][j] = 0;
         }
     };
 
